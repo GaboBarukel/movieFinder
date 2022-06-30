@@ -1,0 +1,28 @@
+.movieContainer {
+  /* border: 2px solid #a8dadc;
+  border-radius: 10px; */
+  /* margin-top: 1rem; */
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .title {
+  margin-top: 3px;
+  text-align: left;
+} */
+
+/* .list:first-child {
+  flex-grow: 2;
+} */

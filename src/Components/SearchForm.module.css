@@ -1,0 +1,45 @@
+.form {
+  background-image: url("/public/data/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20%;
+  /* width: 50%;
+  margin: auto;
+  padding: 20px 3% 20px; */
+}
+
+.inputLabel {
+  color: #f1faee;
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+  display: block;
+  margin-right: 68%;
+  transition: all 0.4s;
+  transform: translateY(0rem);
+}
+
+.input {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  color: #f1faee;
+  background-color: #1d3557;
+  border: none;
+  width: 83%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:placeholder-shown + .inputLabel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
