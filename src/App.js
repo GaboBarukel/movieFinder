@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import classes from "./App.module.css";
-
 import PopularMovieList from "./Components/PopularMoviesList";
 import SearchForm from "./Components/SearchForm";
 import SearchedMoviesList from "./Components/SearchedMoviesList";
@@ -23,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className={classes.app}>
+    <>
       <SearchForm
         onShow={showSearchHandler}
         onSearchPass={searchTermPass}
@@ -34,7 +32,7 @@ function App() {
       ) : (
         <SearchedMoviesList onSearchTerm={searchTerm} />
       )}
-    </div>
+    </>
   );
 }
 

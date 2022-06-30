@@ -30,21 +30,26 @@ const PopularMovieList = () => {
   };
 
   return (
-    <div className={classes.movieContainer}>
-      <h2 className={classes.title}>PELÍCULAS POPULARES</h2>
-      <Button onClick={showAllHandler}>VER MÁS</Button>
-      {popularMovies ? (
-        <ul className={classes.list}>
-          {(!allMoviesDisplay ? popularMovies.slice(0, 6) : popularMovies).map(
-            (movie) => (
+    <>
+      <div className={classes.titleContainer}>
+        <h2 className={classes.title}>PELÍCULAS POPULARES</h2>
+        <Button onClick={showAllHandler}>VER MÁS</Button>
+      </div>
+      <div className={classes.movieContainer}>
+        {popularMovies ? (
+          <ul className={classes.list}>
+            {(!allMoviesDisplay
+              ? popularMovies.slice(0, 6)
+              : popularMovies
+            ).map((movie) => (
               <MovieItem movieData={movie} key={movie.id} />
-            )
-          )}
-        </ul>
-      ) : (
-        <Loading />
-      )}
-    </div>
+            ))}
+          </ul>
+        ) : (
+          <Loading />
+        )}
+      </div>
+    </>
   );
 };
 

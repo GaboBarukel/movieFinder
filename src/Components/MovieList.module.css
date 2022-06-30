@@ -1,27 +1,38 @@
 .movieContainer {
-  /* border: 2px solid #a8dadc;
-  border-radius: 10px; */
-  /* margin-top: 1rem; */
-  flex-wrap: wrap;
-  margin: 15px;
+  display: grid;
+  grid-template-rows: 4fr;
+  margin: 10px;
+  margin-bottom: 0;
+  border-radius: 10px;
   padding: 5px 15px;
-  position: relative;
+  background-color: #87bba2;
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   list-style-type: none;
+  text-align: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
-/* .title {
+.title {
   margin-top: 3px;
+  margin-bottom: 0;
   text-align: left;
-} */
+  display: inline-block;
+}
+
+.titleContainer {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #55828b;
+}
 
 /* .list:first-child {
   flex-grow: 2;
